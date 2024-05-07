@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flocus</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <!-- Link to the provided font -->
+    <link rel="stylesheet" href="https://use.typekit.net/gok7bxe.css">
+</head>
+<body>
+    <header>
+        <h1>Flocus</h1>
+    </header>
+
+    <main>
+        <!-- Music Player Section -->
+        <section id="music-player">
+            <h2>Music Player</h2>
+            <div class="controls">
+                <button id="play-btn">Play</button>
+                <button id="pause-btn">Pause</button>
+                <button id="stop-btn">Stop</button>
+                <button id="next-btn">Next Track</button>
+            </div>
+        </section>
+
+        <!-- Pomodoro Timer Section -->
+        <section id="pomodoro-timer">
+            <h2>Timer</h2>
+            <div class="timer-controls">
+                <p id="timer-display">25:00</p>
+                <button id="start-timer-btn">Start</button>
+                <button id="pause-timer-btn">Pause</button>
+                <button id="reset-timer-btn">Reset</button>
+            </div>
+        </section>
+
+        <!-- Task Management Section -->
+        <section id="task-manager">
+            <h2>Tasks/Goals</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Enter a task or goal">
+                <select id="task-priority">
+                    <option value="!">Low</option>
+                    <option value="!!" selected>Medium</option>
+                    <option value="!!!">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            
+            <ul id="task-list"></ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 flocus.io</p>
+    </footer>
+    <!-- JavaScript Files -->
+    <script src="../JS/timer.js"></script>
+    <script src="../JS/tasks.js"></script>
+</body>
+</html>
