@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Better</title>
+    <link rel="stylesheet" href="https://use.typekit.net/gok7bxe.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="title"><div class="text-wrapper">F</div></div>
+        <div class="text-wrapper-2">STUDY BETTER</div>
+        <div class="login"><div class="div">Login</div></div>
+    </div>
+
+    <div class="main-content">
+        <div class="timer">
+            <div id="timer-display" class="text-wrapper">25:00</div>
+            <div class="controls">
+                <button id="start-timer-btn">Start</button>
+                <button id="pause-timer-btn">Pause</button>
+                <button id="reset-timer-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="player">
+            <div class="frame"></div>
+            <div class="overlap">
+                <div class="overlap-group">
+                    <img class="vector" src="img/vector-1.svg" alt="vector graphic" />
+                    <div class="ellipse"></div>
+                </div>
+                <img class="polygon" src="img/polygon-1.svg" alt="polygon graphic" />
+            </div>
+        </div>
+
+        <div class="tasks">
+            <div class="title"><div class="text-wrapper">TASKS</div></div>
+            <form id="task-form">
+                <input id="task-input" type="text" placeholder="New Task">
+                <select id="task-priority">
+                    <option value="!">Low</option>
+                    <option value="!!">Medium</option>
+                    <option value="!!!">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+
+        <div class="calendar">
+            <div class="title"><div class="text-wrapper">CALENDAR</div></div>
+        </div>
+    </div>
+    
+    <script src="../JS/timer.js"></script>
+    <script src="../JS/tasks.js"></script>
+</body>
+</html>
